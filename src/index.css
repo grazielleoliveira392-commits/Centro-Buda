@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bebas: "Bebas Neue", "Oswald", sans-serif;
+  --font-buda: "Big Shoulders Display", "Bebas Neue", sans-serif;
+  --font-display: "Oswald", sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom aesthetic scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Translucent Black button (sharp minimal corners, hairline border, low opacity) */
+.buda-dark-btn,
+.buda-liquid-glass {
+  position: relative;
+  background: rgba(0, 0, 0, 0.25);
+  border: 0.5px solid rgba(255, 255, 255, 0.035);
+  border-radius: 3px;
+  box-shadow: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.buda-dark-btn:hover,
+.buda-liquid-glass:hover {
+  background: rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.10);
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.buda-dark-btn:active,
+.buda-liquid-glass:active {
+  background: rgba(0, 0, 0, 0.65);
+  transform: translateY(0) scale(0.985);
+  box-shadow: none;
+}
