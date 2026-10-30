@@ -1,0 +1,6 @@
+{
+  "name": "BUDA Fight & Fitness",
+  "description": "Portal oficial BUDA - Localização, Horários de Aulas, Loja Oficial e Contato direto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
